@@ -2,7 +2,9 @@ import React, {Component} from 'react';
 import './MyComponent.css';
 
 class MyComponent extends Component{
-	
+	componentDidMount(){
+		console.log("yes");
+	}
 	divStyle = {
 		fontSize: "7px"	
 	};
@@ -10,8 +12,9 @@ class MyComponent extends Component{
 	state = {
 			count: 5
 	};
+	
 	increaseCount=()=> {
-		console.log("done bruh");
+		console.log("done");
 		this.setState({count: this.state.count+1});
 	};
 	render(){
